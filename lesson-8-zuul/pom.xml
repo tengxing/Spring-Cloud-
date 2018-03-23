@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>eurekaserver</name>
+    <name>zuul</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -69,6 +69,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+	<finalName>lesson8-${artifactId}</finalName>
     </build>
 
     <repositories>
@@ -81,6 +82,6 @@
             </snapshots>
         </repository>
     </repositories>
-
+     
 
 </project>
