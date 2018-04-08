@@ -121,5 +121,5 @@ Feign在默认情况下使用的是JDK原生的URLConnection发送HTTP请求，�
         </dependency>
 ```
 ## 总结
-Feign在调用过程中模板化，清晰化，透明化。测试用例代码托管于:[Github](https://github.com/tengxing/Spring-Cloud-Learn/tree/master/lesson-5-discoverClient)
+简单的说一下Ribbon，它是一个负载均衡客户端，可以很好的控制http和tcp的一些行为，Feign默认集成了ribbon，并且默认开启`负载均衡`。Feign在调用过程中模板化，清晰化，透明化。测试用例代码托管于:[Github](https://github.com/tengxing/Spring-Cloud-Learn/tree/master/lesson-5-discoverClient)
 比较阿里Dubbo中暴露远程服务的方式，Dubbo是基于私有二进制协议进行传输，而Feign本质上还是个HTTP客户端。因此在用Spring Cloud Netflix搭建微服务，那么Feign无疑是最佳选择。
